@@ -10,7 +10,7 @@
 ## Ablauf
 Liebe Übungsteilnehmer/-innen,
 
-aufgrund der Corona-Pandemie findet die Übung für Rechnernetze zur Vorlesung von Prof. Froitzheim in diesem Semester in digitaler Form statt. Dazu treffen wir uns regelmäßig (Dienstag, 16:00 Uhr) zur Beantwortung von Fragen in einem [BBB-Raum](https://teach.informatik.tu-freiberg.de/b/jon-9eq-mpq-tz9). Folien, Beispielcode und weitere Informationen werden wir hier verlinken.
+aufgrund der Corona-Pandemie findet die Übung für Rechnernetze zur Vorlesung von Prof. Froitzheim in diesem Semester in digitaler Form statt. Dazu treffen wir uns regelmäßig (Dienstag, 16:00 Uhr) in einem [BBB-Raum](https://teach.informatik.tu-freiberg.de/b/jon-9eq-mpq-tz9). Folien, Beispielcode und weitere Informationen werden wir hier verlinken.
 
 Für Ankündigungen, Terminänderungen etc. werden wir ebenfalls dieses GitHub-Repo nutzen. Der OPAL-Kurs wird nicht weiter aktualisiert werden.
 
