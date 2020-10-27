@@ -5,7 +5,7 @@
 | Termin              | Thema                             | Material                                                                  |
 | :------------------ | :-------------------------------- | :------------------------------------------------------------------------ |
 | 20.10.              | Entfällt wegen *dies academicus*  |                                                                           |
-| 27.10.              | Einführung, Informationstheorie   | [Folien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/01-Informationstheorie/Folien.pdf), [Hausaufgabe](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/01-Informationstheorie/HA.pdf)                                               |
+| 27.10.              | Einführung, Informationstheorie   | [Folien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/01-Informationstheorie/Folien.pdf), [Hausaufgabe](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/01-Informationstheorie/HA.pdf), [Aufnahme](https://teach.informatik.tu-freiberg.de/playback/presentation/2.0/playback.html?meetingId=e1de5adf5f8a28e92d09eae13ddf8339c94beb77-1603810643140)                 |
 
 ## Ablauf
 Liebe Übungsteilnehmer/-innen,
