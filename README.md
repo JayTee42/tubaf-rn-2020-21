@@ -5,7 +5,7 @@
 | Termin              | Thema                             | Material                                                                  |
 | :------------------ | :-------------------------------- | :------------------------------------------------------------------------ |
 | 20.10.              | Entfällt wegen *dies academicus*  |                                                                           |
-| 27.10.              | Einführung                        |                                                                           |
+| 27.10.              | Einführung, Informationstheorie   | [Folien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/01-Informationstheorie/Folien.pdf), [Hausaufgabe](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/01-Informationstheorie/HA.pdf)                                               |
 
 ## Ablauf
 Liebe Übungsteilnehmer/-innen,
