@@ -6,7 +6,7 @@
 | :------------------ | :-------------------------------- | :------------------------------------------------------------------------ |
 | 20.10.              | Entfällt wegen *dies academicus*  |                                                                           |
 | 27.10.              | Einführung, Informationstheorie   | [Folien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/01-Informationstheorie/Folien.pdf), [Hausaufgabe](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/01-Informationstheorie/HA.pdf), [Aufnahme](https://teach.informatik.tu-freiberg.de/playback/presentation/2.0/playback.html?meetingId=e1de5adf5f8a28e92d09eae13ddf8339c94beb77-1603810643140)                 |
-| 03.11.              | ISO/OSI-Schichtenmodell           | [Folien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/02%20-%20ISO_OSI/Folien.pdf), [Hausaufgabe](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/02%20-%20ISO_OSI/HA.pdf), Aufnahme |
+| 03.11.              | ISO/OSI-Schichtenmodell           | [Folien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/02%20-%20ISO_OSI/Folien.pdf), [Vor- und Nachteile der Topologien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/02%20-%20ISO_OSI/topos.txt) [Hausaufgabe](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/02%20-%20ISO_OSI/HA.pdf), [Ansatz für den Stern mit PC in der Mitte](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/02%20-%20ISO_OSI/Ansatz.md), Aufnahme |
 
 ## Ablauf
 Liebe Übungsteilnehmer/-innen,
