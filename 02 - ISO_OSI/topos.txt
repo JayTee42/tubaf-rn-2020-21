@@ -1,0 +1,70 @@
+---
+Bus
+---
+ + Erweiterbarkeit
+ + Wartung
+ + Ausfall von Clienten kein Problem
+ + keine Wegfindung nötig
+
+ - Überlastung, da ein gemeinsames Medium
+ - Zugriffsverfahren notwendig
+ - "Jeder sieht alles" => Verschlüsselung?
+ - Bus selbst SPOF
+
+----------
+Liniennetz
+----------
+
+ + Einfache Wegfindung ("links order rechts")
+ + Erweiterbarkeit
+
+ - Hohes Ausfallrisiko, "always on"
+ - Latenz ist heterogen (O(n)), Verarbeitung in den Middleboxes
+
+----
+Ring
+----
+
+ + Einfache Wegfindung
+ + Erweiterbarkeit
+ + ein Ausfall kann ausgeglichen werden (=> Liniennetz)
+
+ - "nur" ein Ausfall kann ausgeglichen werden
+ - Latenz ist heterogen (O(n/2)), Verarbeitung in den Middleboxes
+
+ O Ein- oder beidseitig?
+
+-----
+Stern
+-----
+
+ + Ausfall irrelevant, außer die Mitte fällt aus (=> SPOF)
+ + Wegfindung trivial
+ + Erweiterbarkeit
+ + Ausfallerscheinungen bleiben lokal
+ + 2 Hops
+
+ - SPOF
+ - Flaschenhals in der Mitte
+
+----------------------------
+Vollständig vermaschtes Netz
+----------------------------
+
+ + Sicher, schnell
+ + Einfache Wegfindung
+ + Ausfall kein Problem
+ + Exklusive Verbindungen
+ + Keine Middleboxes, keine Hops
+
+ - Viele, viele Kabel (n(n-1) / 2)
+ - schlechte Erweiterbarkeit (viele neue Kabel)
+
+--------
+Backbone
+--------
+
+ + Hierarchische Struktur
+ + Kopplung von Unternetzen
+
+ - Komplex
