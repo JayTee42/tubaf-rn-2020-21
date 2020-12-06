@@ -39,19 +39,22 @@ void print_addr(uint32_t addr, char* buf)
 	inet_ntop(AF_INET, &addr_struct, buf, INET_ADDRSTRLEN);
 }
 
+//Beispiel: get_net_identifier(192.168.0.1, 255.255.0.0) => 192.168.0.0
 uint32_t get_net_identifier(uint32_t addr, uint32_t mask)
 {
-	//FIXME
+	return addr & mask;
 }
 
+//Beispiel: get_host(192.168.0.1, 255.255.0.0) => 0.0.0.1
 uint32_t get_host(uint32_t addr, uint32_t mask)
 {
-	//FIXME
+	return addr & ~mask;
 }
 
+//Beispiel: get_broadcast(192.168.0.1, 255.255.0.0) => 192.168.255.255
 uint32_t get_broadcast(uint32_t addr, uint32_t mask)
 {
-	//FIXME
+	return addr | ~mask;
 }
 
 int main(void)
