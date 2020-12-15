@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
+#include <errno.h>
+
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
@@ -60,6 +64,33 @@ int main(int argc, char** argv)
 	if (result != 1)
 	{
 		printf("Failed to parse server IP address.\n");
+		return -1;
+	}
+
+	// Create a new socket (IPv4, TCP):
+	int sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+
+	if (sock < 0)
+	{
+		printf("Failed to create socket: %s\n", strerror(errno));
+		return -1;
+	}
+
+	// Bind it to the client address:
+	result = bind(sock, (struct sockaddr*)&client_addr, sizeof(client_addr));
+
+	if (result < 0)
+	{
+		printf("Failed to bind socket to client address: %s\n", strerror(errno));
+		return -1;
+	}
+
+	// Connect to the server address:
+	result = connect(sock, (struct sockaddr*)&server_addr, sizeof(server_addr));
+
+	if (result < 0)
+	{
+		printf("Failed to connect to server address: %s\n", strerror(errno));
 		return -1;
 	}
 
