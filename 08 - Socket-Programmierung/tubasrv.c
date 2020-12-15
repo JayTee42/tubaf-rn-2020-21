@@ -21,7 +21,7 @@ int main(int argc, char** argv)
 	if (argc > 1)
 	{
 		// TODO: Better parsing!
-		server_port = atol(argv[2]);
+		server_port = atol(argv[1]);
 	}
 	else
 	{
