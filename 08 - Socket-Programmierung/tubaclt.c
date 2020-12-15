@@ -3,11 +3,14 @@
 #include <string.h>
 
 #include <errno.h>
+#include <unistd.h>
 
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
 #define DEFAULT_SERVER_PORT 80
+#define HTTP_BUFFER_LENGTH 4096
+#define HTTP_REQUEST_FORMAT "GET / HTTP/1.0\r\nHost: %s\r\n\r\n"
 
 int main(int argc, char** argv)
 {
@@ -93,6 +96,53 @@ int main(int argc, char** argv)
 		printf("Failed to connect to server address: %s\n", strerror(errno));
 		return -1;
 	}
+
+	// Build a HTTP GET request:
+	char http_buf[HTTP_BUFFER_LENGTH];
+	int request_length = snprintf(http_buf, HTTP_BUFFER_LENGTH, HTTP_REQUEST_FORMAT, server_addr_str);
+
+	// Send it:
+	int bytes_written = 0;
+
+	while (request_length > 0)
+	{
+		// Write the remaining bytes:
+		result = write(sock, &http_buf[bytes_written], request_length);
+
+		if (result < 0)
+		{
+			printf("Failed to write some bytes: %s\n", strerror(errno));
+			return -1;
+		}
+
+		// Update the counters with the number of written bytes:
+		bytes_written += result;
+		request_length -= result;
+	}
+
+	// Read the answer:
+	do
+	{
+		// Read a buffer full of bytes:
+		result = read(sock, http_buf, HTTP_BUFFER_LENGTH);
+
+		// Check for error:
+		if (result < 0)
+		{
+			printf("Failed to read some bytes: %s\n", strerror(errno));
+			return -1;
+		}
+
+		// Print all the read bytes to the terminal:
+		for (int i = 0; i < result; i++)
+		{
+			putchar(http_buf[i]);
+		}
+	} while (result > 0);
+
+	// Close the socket:
+	close(sock);
+	printf("\n\nConnection closed.\n");
 
 	return 0;
 }
