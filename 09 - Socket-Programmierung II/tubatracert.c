@@ -182,16 +182,15 @@ resp_t recv_icmp_echo_resp(int sock, uint16_t ident, uint16_t seq_num, struct so
 
 		ssize_t result = recvfrom(sock, packet, RESP_BUF_LEN, 0, (struct sockaddr*)&resp_addr, &resp_addr_len);
 
-		// Is this a timeout?
-		if (errno == EAGAIN)
-		{
-			return RESP_TIMEOUT;
-		}
-
-		// Is this some other kind of error?
 		if (result < 0)
 		{
-			printf("errno is %d\n", errno);
+			// Is this a timeout ... ?
+			if (errno == EAGAIN)
+			{
+				return RESP_TIMEOUT;
+			}
+
+			// ... or some other error?
 			printf("Failed to receive raw packet: %s\n", strerror(errno));
 			return RESP_FAIL;
 		}
@@ -299,7 +298,7 @@ int main(int argc, char** argv)
 		case RESP_FAIL: break;
 		case RESP_TIMEOUT:
 
-			printf("Timeout has occurred!\n");
+			printf("TTL %d: Timeout\n", ttl);
 			break;
 
 		case RESP_EXCEEDED:
@@ -329,8 +328,8 @@ int main(int argc, char** argv)
 			break;
 		}
 
-		// Only stay in the loop if this was a middlebox:
-		if (resp != RESP_EXCEEDED)
+		// Only stay in the loop if this was a middlebox or a timeout:
+		if ((resp != RESP_EXCEEDED) && (resp != RESP_TIMEOUT))
 		{
 			break;
 		}
