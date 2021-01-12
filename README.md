@@ -14,7 +14,7 @@
 | 08.12.              | TCP | [Folien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/07%20-%20TCP/Folien.pdf), [Hausaufgabe](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/07%20-%20TCP/HA.pdf), [Aufnahme](https://teach.informatik.tu-freiberg.de/playback/presentation/2.0/playback.html?meetingId=e1de5adf5f8a28e92d09eae13ddf8339c94beb77-1607439440034) |
 | 15.12.              | Socket-Programmierung I | [Folien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/08%20-%20Socket-Programmierung/Folien.pdf), [Client](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/08%20-%20Socket-Programmierung/tubaclt.c), [Server](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/08%20-%20Socket-Programmierung/tubasrv.c), [Aufnahme](https://teach.informatik.tu-freiberg.de/playback/presentation/2.0/playback.html?meetingId=e1de5adf5f8a28e92d09eae13ddf8339c94beb77-1608044355828) |
 | 22.12.              | Socket-Programmierung II | [Server mit fork()](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/09%20-%20Socket-Programmierung%20II/tubasrv.c), [Traceroute](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/09%20-%20Socket-Programmierung%20II/tubatracert.c), [Fehlende Details](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/09%20-%20Socket-Programmierung%20II/details.md), [Aufnahme](https://teach.informatik.tu-freiberg.de/playback/presentation/2.0/playback.html?meetingId=e1de5adf5f8a28e92d09eae13ddf8339c94beb77-1608649110637) |
-| 12.02.              | TBA |
+| 12.02.              | Zugriffsverfahren | 
 
 ## Ablauf
 Liebe Übungsteilnehmer/-innen,
