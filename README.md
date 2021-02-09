@@ -18,6 +18,7 @@
 | 19.01.              | Zeit in verteilten Systemen | [Folien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/11%20-%20Zeit%20in%20verteilten%20Systemen/Folien.pdf), [Aufnahme](https://teach.informatik.tu-freiberg.de/playback/presentation/2.0/playback.html?meetingId=e1de5adf5f8a28e92d09eae13ddf8339c94beb77-1611068025582) |
 | 26.01.              | Qos und Hashes | [Folien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/12%20-%20Qos%2C%20Hashes/Folien.pdf), [Aufnahme](https://teach.informatik.tu-freiberg.de/playback/presentation/2.0/playback.html?meetingId=e1de5adf5f8a28e92d09eae13ddf8339c94beb77-1611673186994), [Starke,Schwache Kollisionsresistenz](https://github.com/JayTee42/tubaf-rn-2020-21/tree/main/12%20-%20Qos%2C%20Hashes/MD5Collision) |
 | 02.02.              | DNS | [Folien](https://github.com/JayTee42/tubaf-rn-2020-21/blob/main/13%20-%20DNS/Folien.pdf), [Aufnahme](https://teach.informatik.tu-freiberg.de/playback/presentation/2.0/playback.html?meetingId=e1de5adf5f8a28e92d09eae13ddf8339c94beb77-1612277488209) |
+| 09.02.              | Spielerei :) | [Aufzeichnung](https://teach.informatik.tu-freiberg.de/playback/presentation/2.0/playback.html?meetingId=e1de5adf5f8a28e92d09eae13ddf8339c94beb77-1612882484945)  |
 
 ## Ablauf
 Liebe Übungsteilnehmer/-innen,
